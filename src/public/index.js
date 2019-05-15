@@ -34,7 +34,7 @@ function init() {
     socket.on('draw_line', data => {
         const line = data.line;
         context.beginPath();
-        context.lineWidth = 5;
+        context.lineWidth = 2;
         context.moveTo(line[0].x * width, line[0].y * height)
         context.lineTo(line[1].x * width, line[1].y * height)
         context.stroke();
